@@ -28,11 +28,13 @@ function Navbar() {
 
     return (
         <>
-            <div className={`max-w-screen-2xl  mx-auto container md:px-20 px-4 fixed top-0 left-0 right-0 ${
+        {/* ${
                 sticky ?
                 'sticky shadow-md bg-base-300 duration-300 transition-all ease-in-out'
                 : ''
-            }`}>
+            } */}
+            <div className={`max-w-screen-3xl md:px-20 px-4 bg-pink-500`
+            }>
 
                 <div className="navbar ">
                     <div className="navbar-start">
@@ -104,9 +106,9 @@ function Navbar() {
                                 </svg>
                             </label>
                         </div>
-                        <div >
+                       
                             <a className="bg-black text-white rounded-md px-2 py-2 hover:bg-slate-800 duration-300 cursor-pointer">Button</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

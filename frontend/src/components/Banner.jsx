@@ -29,11 +29,8 @@ function Banner() {
                         <button className="btn btn-secondary">Secondary</button>
                     </div>
                 </div>
-                <div className='md:order-2 order-first w-full  md:w-1/2'>
-                    <div className='mt-6'>
-
-                    <img alt='Books image' src={bannerImage}/>
-                    </div>
+                <div className='md:order-2 order-first w-full  md:w-1/2 mt-12 md:mt-32'>
+                    <img alt='Books image' className='w-120 h-120 m-auto items-center' src={bannerImage}/>
                 </div>
             </div>
         </>
