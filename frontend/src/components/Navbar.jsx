@@ -28,12 +28,11 @@ function Navbar() {
 
     return (
         <>
-        {/* ${
+            <div className={`max-w-screen-3xl mx-auto md:px-20 px-4 ${
                 sticky ?
-                'sticky shadow-md bg-base-300 duration-300 transition-all ease-in-out'
+                'sticky top-0 shadow-md bg-base-300 duration-300 transition-all ease-in-out'
                 : ''
-            } */}
-            <div className={`max-w-screen-3xl md:px-20 px-4 bg-pink-500`
+            }`
             }>
 
                 <div className="navbar ">
