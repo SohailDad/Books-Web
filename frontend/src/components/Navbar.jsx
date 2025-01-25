@@ -30,7 +30,7 @@ function Navbar() {
         <>
             <div className={`max-w-screen-3xl mx-auto md:px-20 px-4 ${
                 sticky ?
-                'sticky top-0 shadow-md bg-base-300 duration-300 transition-all ease-in-out'
+                'sticky top-0 shadow-md bg-base-300 duration-300 z-50 transition-all ease-in-out'
                 : ''
             }`
             }>
