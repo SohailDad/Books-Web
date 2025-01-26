@@ -1,4 +1,5 @@
 import {React, useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [sticky, setSticky] = useState(false);
@@ -20,9 +21,9 @@ function Navbar() {
     
 
     const navItems = (<>
-        <li><a>Home</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/course">Course</Link></li>
         <li><a>About</a></li>
-        <li><a>Course</a></li>
         <li><a>Contact</a></li>
     </>);
 
