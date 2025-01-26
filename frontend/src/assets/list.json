@@ -13,7 +13,7 @@
         "name": "Story Book",
         "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "price": 0,
-        "category": "Free",
+        "category": "paid",
         "image": "https://npr.brightspotcdn.com/dims4/default/331023d/2147483647/strip/true/crop/1076x823+0+0/resize/1760x1346!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2F27%2F21e97c404b2fba8dc2189018f871%2Fbooks-image.jpg"
 
     },
@@ -31,7 +31,7 @@
         "name": "Computers Book",
         "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "price": 0,
-        "category": "Free",
+        "category": "paid",
         "image": "https://npr.brightspotcdn.com/dims4/default/331023d/2147483647/strip/true/crop/1076x823+0+0/resize/1760x1346!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2F27%2F21e97c404b2fba8dc2189018f871%2Fbooks-image.jpg"
 
     },
@@ -58,13 +58,13 @@
         "name": "Java Book",
         "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "price": 0,
-        "category": "programming",
+        "category": "paid",
         "image": "https://npr.brightspotcdn.com/dims4/default/331023d/2147483647/strip/true/crop/1076x823+0+0/resize/1760x1346!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2F27%2F21e97c404b2fba8dc2189018f871%2Fbooks-image.jpg"
 
     },
     {
         "id": 8,
-        "name": "digital Marketing Book",
+        "name": "Marketing Book",
         "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "price": 0,
         "category": "Free",
@@ -103,13 +103,13 @@
         "name": "Python Book",
         "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "price": 40,
-        "category": "programming",
+        "category": "paid",
         "image": "https://npr.brightspotcdn.com/dims4/default/331023d/2147483647/strip/true/crop/1076x823+0+0/resize/1760x1346!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2F27%2F21e97c404b2fba8dc2189018f871%2Fbooks-image.jpg"
 
     },
     {
         "id": 13,
-        "name": "Confidence building Book",
+        "name": "Confidence Book",
         "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "price": 0,
         "category": "Free",
@@ -127,10 +127,10 @@
     },
     {
         "id": 15,
-        "name": "Full Stack in JAvaScript",
+        "name": "Full Stack(js)",
         "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "price": 50,
-        "category": "programming",
+        "category": "paid",
         "image": "https://npr.brightspotcdn.com/dims4/default/331023d/2147483647/strip/true/crop/1076x823+0+0/resize/1760x1346!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2F27%2F21e97c404b2fba8dc2189018f871%2Fbooks-image.jpg"
 
     }

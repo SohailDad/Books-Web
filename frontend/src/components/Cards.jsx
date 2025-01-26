@@ -4,8 +4,8 @@ function Cards(props) {
     
     return (
         <>
-        <div className='mt-4 my-4 p-3'>
-            <div className="card bg-base-100 w-92 shadow-xl">
+        <div className='mt-4 my-4 p-3 cursor-pointer'>
+            <div className="card bg-base-100 w-92 md:w-80 shadow-xl hover:scale-105 duration-300 border-[1px]">
                 <figure>
                     <img
                         src={props.item.image}
