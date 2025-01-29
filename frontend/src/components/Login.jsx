@@ -31,7 +31,7 @@ function Login() {
                     <div className='flex justify-around mt-4 items-center'>
                         <button className='bg-pink-500 rounded-md p-2 text-white hover:bg-pink-600 duration-300'>Login</button>
                         <p>
-                            Not registered? <span><Link to='/signup' className='underline text-blue-700'>SignUp</Link></span>
+                            Not registered?<Link to='/signup' className='underline text-blue-700'>SignUp</Link>
                         </p>
                     </div>
                 </div>
