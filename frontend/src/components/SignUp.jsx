@@ -6,7 +6,7 @@ function SignUp() {
     return (
         <div>
             <div className='flex h-screen justify-center items-center'>
-                <div className="w-[600px]">
+                <div className="w-[1000px] flex h-screen justify-center items-center">
                     <div className="modal-box">
                         <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}
