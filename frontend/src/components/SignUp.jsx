@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Login from './Login'
 
 function SignUp() {
     return (
         <div>
             <div className='flex h-screen justify-center items-center'>
-                <div id="my_modal_3" className="w-[600px]">
+                <div className="w-[600px]">
                     <div className="modal-box">
                         <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}
@@ -38,10 +39,14 @@ function SignUp() {
                         </div>
                         {/* Button */}
                         <div className='flex justify-around mt-4 items-center'>
-                        <button className='bg-pink-500 rounded-md p-2 text-white hover:bg-pink-600 duration-300'>Login</button>
+                        <button className='bg-pink-500 rounded-md p-2 text-white hover:bg-pink-600 duration-300'>SignUp</button>
                         <p>
-                            Not registered?<Link to='/' className='underline text-blue-700'>Login</Link>
+                            Have account?<button className='underline text-blue-700'
+                            onClick={() => document.getElementById("my_modal_3").showModal()}
+                            >Login</button>
+                            <Login/>
                         </p>
+
                     </div>
                     </div>
                 </div>
