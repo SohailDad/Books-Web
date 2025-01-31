@@ -59,7 +59,7 @@ function Navbar() {
                                 {navItems}
                             </ul>
                         </div>
-                        <a className="font-bold text-2xl cursor-pointer">BookStore</a>
+                        <Link to= "/" className="font-bold text-2xl cursor-pointer">BookStore</Link>
                     </div>
                     <div className='navbar-end space-x-3'>
                         <div className="navbar-center hidden lg:flex">

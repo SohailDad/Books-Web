@@ -55,7 +55,7 @@ function Contact() {
                         className="px-3 py-2 border rounded-md outline-none textarea-lg w-full max-w-xl max-h-40 min-h-40 my-3">
                     </textarea>
 
-                    <button className="btn btn-secondary">Secondary</button>
+                    <button className="btn btn-secondary">Send</button>
 
                 </div>
 
