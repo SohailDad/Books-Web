@@ -3,6 +3,7 @@ import Home from "./home/Home";
 import { Route, Routes } from 'react-router-dom'
 import Courses from "./courses/Courses";
 import SignUp from "./components/SignUp";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -19,11 +20,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
     </>
 
-    // 2:08:05
+    // 2:26:05
   )
 }
 

@@ -60,8 +60,14 @@ function SignUp() {
                                 <button className='bg-pink-500 rounded-md p-2 text-white hover:bg-pink-600 duration-300'>SignUp</button>
                                 <p>
                                     Have account?<button className='underline text-blue-700'
-                                        onClick={() => document.getElementById("my_modal_3").showModal()}
-                                    >Login</button>
+                                        onClick={() => {
+                                            document.getElementById("my_modal_3").showModal()
+                                            document.getElementById("my_modal_3").close();
+                                        }
+                                        }
+                                    >
+                                        Login
+                                    </button>
                                     <Login />
                                 </p>
 

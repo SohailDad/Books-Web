@@ -24,8 +24,8 @@ function Navbar() {
     const navItems = (<>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/courses">Course</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
         <li><a>About</a></li>
-        <li><a>Contact</a></li>
     </>);
 
     return (
