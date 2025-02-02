@@ -25,10 +25,10 @@ function Login() {
                             <br />
                             <input type='email' placeholder='Enter your email'
                                 className='w-80 px-3 py-1 border rounded-full outline-none'
-                                {...register("name", { required: true })}
+                                {...register("email", { required: true })}
                             />
                             <br />
-                            {errors.name && <span className="text-sm text-red-500">This field is required</span>}
+                            {errors.email && <span className="text-sm text-red-500">This field is required</span>}
                         </div>
                         {/* Password */}
                         <div className='mt-4 space-y-2'>
@@ -36,10 +36,10 @@ function Login() {
                             <br />
                             <input type='password' placeholder='Enter your password'
                                 className='w-80 px-3 py-1 border rounded-full outline-none'
-                                {...register("name", { required: true })}
+                                {...register("password", { required: true })}
                             />
                             <br />
-                            {errors.name && <span className="text-sm text-red-500">This field is required</span>}
+                            {errors.password && <span className="text-sm text-red-500">This field is required</span>}
                         </div>
                         {/* Button */}
                         <div className='flex justify-around mt-4 items-center'>
