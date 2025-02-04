@@ -4,7 +4,7 @@ import { getBook } from "../controller/bookController.js";
 
 const router = express.Router();
 
-router.get('/',getBook);
+router.get('/', getBook);
 
 
 

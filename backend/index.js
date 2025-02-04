@@ -2,8 +2,10 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { mongoose } from 'mongoose';
 import bookRoutes from './routes/bookRoutes.js';
+import cors from 'cors'
 
 const app = express()
+app.use(cors());
 dotenv.config()
 
 const port = process.env.PORT || 3000
@@ -20,5 +22,7 @@ try {
 
 app.use('/book',bookRoutes);
 
+
+// 3:03:39
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
