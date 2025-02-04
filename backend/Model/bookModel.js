@@ -4,7 +4,7 @@ const bookSchema = mongoose.Schema({
     name: String,
     title: String,
     price: Number,
-    cateory: String,
+    category: String,
     image: String
 })
 

@@ -1,13 +1,14 @@
-import Book from "../Model/bookModel"
+import Book from "./model/bookModel"
 
 
-export const getBook = (req,res)=>{
+export const getBook = async (req,res)=>{
 
     try {
-        const book = Book.find();
-        res.status()
+        const book = await Book.find();
+        res.status(200).json(book)
     } catch (error) {
-        
+        console.log("Error: ",error)
+        res.status(500).json(error)
     }
 
 }
