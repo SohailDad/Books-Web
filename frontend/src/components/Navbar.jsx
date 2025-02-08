@@ -119,15 +119,16 @@ function Navbar() {
                         </div>
 
                         {
-                            authUser ? <Logout /> :
+                            authUser ?
+                                (<Logout />) :
 
-                                <div>
+                                (<div>
                                     <a className="bg-black text-white rounded-md px-2 py-2 hover:bg-slate-800 duration-300 cursor-pointer"
                                         onClick={() => document.getElementById("my_modal_3").showModal()}>
                                         Login
                                     </a>
                                     <Login />
-                                </div>
+                                </div>)
                         }
                     </div>
                 </div>

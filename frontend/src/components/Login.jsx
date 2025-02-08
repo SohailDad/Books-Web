@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
 
 function Login() {
+    const navigate = useNavigate();
+    
     const {
         register,
         handleSubmit,
@@ -22,14 +24,17 @@ function Login() {
             console.log(res.data)
             if(res.data){
                 toast.success('Loggedin Successfully')
-
+                document.getElementById("my_modal_3")?.close();
+                localStorage.setItem("Users",JSON.stringify(res.data))
+                navigate("/");
             }
-            localStorage.setItem("Users",JSON.stringify(res.data))
         }).catch((err)=>{
             if (err.response) {
                 console.log(err);
                 toast.error("Error: "+ err.response.data.message)
-
+                setTimeout(() => {
+                    
+                }, 2000);
             }
         })
     };
