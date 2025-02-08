@@ -1,29 +1,28 @@
 import React from "react";
 import Home from "./home/Home";
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Courses from "./courses/Courses";
 import SignUp from "./components/SignUp";
 import Contact from "./components/Contact";
 import { Toaster } from 'react-hot-toast';
+import { useAuth } from "./context/AuthProvider";
 
 function App() {
 
+  const [authUser, setAuthUser] = useAuth()
+  console.log(authUser)
+
   return (
-    
-    // <div className="bg-white-500">
-    //   <Home />
-    //   <Course/>
-    // </div>
-    
+
     <>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Toaster />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={authUser ? <Courses /> : <Navigate to='/signup'/>} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Toaster />
     </>
 
     // 3:50:51
