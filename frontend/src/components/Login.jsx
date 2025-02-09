@@ -3,12 +3,13 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import { useAuth } from '../context/AuthProvider';
 
 
 function Login() {
-    
+
     const navigate = useNavigate();
-    
+    const [authUser, setAuthUser] = useAuth();
     const {
         register,
         handleSubmit,
@@ -22,8 +23,9 @@ function Login() {
 
         await axios.post("http://localhost:3001/user/login",userInfo)
         .then((res)=>{
-            console.log(res.data)
+            // console.log(res.data)
             if(res.data){
+                setAuthUser(res.data)
                 toast.success('Loggedin Successfully')
                 document.getElementById("my_modal_3")?.close();
                 localStorage.setItem("Users",JSON.stringify(res.data))

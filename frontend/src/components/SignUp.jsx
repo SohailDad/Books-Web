@@ -24,11 +24,10 @@ function SignUp() {
         }
         await axios.post("http://localhost:3001/user/signup", userInfo)
             .then((res) => {
-                console.log(res.data)
+                // console.log(res.data)
                 if (res.data) {
 
                     toast.success('Signup Successfully');
-                    // < Navigate to = "/" />
                     navigate("/")
             }
                 localStorage.setItem("Users", JSON.stringify(res.data))
