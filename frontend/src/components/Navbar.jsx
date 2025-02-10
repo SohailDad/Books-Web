@@ -10,7 +10,7 @@ function Navbar() {
 
 
     const [authUser, setAuthUser] = useAuth()
-    console.log(authUser)
+    // console.log(authUser)
 
 
     const [sticky, setSticky] = useState(false);
